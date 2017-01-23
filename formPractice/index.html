@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Form Practice</title>
+</head>
+<body>
+<h1>  A Simple Form</h1>
+<p> <em>  Form Fundamentals</em></p>
+
+<form action="#">
+<fieldset>  
+<legend>  Customer info</legend>
+<label for="name">
+Name:<input id="name" type="name" name="username" autofocus, placeholder="Write your name", required>
+</label>
+<label for="tel">
+Telepohone: <input id="tel" type="tel" name="Telepohone  number" placeholder="Pattern: 666 99 88 77" required pattern=[0-9]{9}>  
+</label>
+<label for="email"><input id="email" type="email" name="email" placeholder="Enter your email adress" multiple required></label>
+</fieldset>
+
+<fieldset>  
+<legend> Books</legend>
+<label for="books"><input id="books" type="text"></label>
+<label for="quantity">  </label>Quantity (Maximum 5):<input id="quantity" type="number" min="1" max="5" name="quantity">
+</fieldset>
+
+<button name = "data send">Submit</button>
+</form>
+
+<p> 2011 Acme United. All rights reserved.</p>
+
+</body>
+</html>
