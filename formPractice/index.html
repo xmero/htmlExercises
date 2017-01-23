@@ -17,7 +17,7 @@
         <input id="name" type="name" name="username" autofocus, placeholder="Write your name", required>
         </li>
         <li>  
-        <label for="tel"> Telephone: ></label>
+        <label for="tel"> Telephone: </label>
         <input id="tel" type="tel" name="Telepohone  number" placeholder="Pattern: 666 99 88 77" required pattern=[0-9]{9}> 
         </li>
         <li>  
@@ -29,7 +29,13 @@
 
 <fieldset>  
 <legend> Books</legend>
-        <input type="text" size = 60>
+<input list="books">
+
+<datalist id="books">
+  <option value="1984">
+  <option value="Moby Dick">
+  <option value="Cid campeador">
+</datalist>
         <label for="quantity">Quantity: Maximum 5)</label>
         <input id="quantity" type="number" min="1" max="5" name="quantity">
 </fieldset>
