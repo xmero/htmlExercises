@@ -11,19 +11,27 @@
 <form action="#">
 <fieldset>  
 <legend>  Customer info</legend>
-<label for="name">
-Name:<input id="name" type="name" name="username" autofocus, placeholder="Write your name", required>
-</label>
-<label for="tel">
-Telepohone: <input id="tel" type="tel" name="Telepohone  number" placeholder="Pattern: 666 99 88 77" required pattern=[0-9]{9}>  
-</label>
-<label for="email"><input id="email" type="email" name="email" placeholder="Enter your email adress" multiple required></label>
+    <ul>  
+        <li> 
+        <label for="name">Name: </label>
+        <input id="name" type="name" name="username" autofocus, placeholder="Write your name", required>
+        </li>
+        <li>  
+        <label for="tel"> Telephone: ></label>
+        <input id="tel" type="tel" name="Telepohone  number" placeholder="Pattern: 666 99 88 77" required pattern=[0-9]{9}> 
+        </li>
+        <li>  
+        <label for="email">Email: </label>
+        <input id="email" type="email" name="email" placeholder="Enter your email adress" multiple required>
+        </li>
+    </ul>
 </fieldset>
 
 <fieldset>  
 <legend> Books</legend>
-<label for="books"><input id="books" type="text"></label>
-<label for="quantity">  </label>Quantity (Maximum 5):<input id="quantity" type="number" min="1" max="5" name="quantity">
+        <input type="text" size = 60>
+        <label for="quantity">Quantity: Maximum 5)</label>
+        <input id="quantity" type="number" min="1" max="5" name="quantity">
 </fieldset>
 
 <button name = "data send">Submit</button>
